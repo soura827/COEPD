@@ -1,0 +1,106 @@
+﻿@charset "utf-8";
+/* CSS Document */
+@media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+.btn-payment{
+margin-top:0px;
+float:right;
+margin-bottom:5px;
+}
+#blog {
+    padding: 0px;
+}	
+#blog li{
+	margin-left:5px;
+	border:none;
+	}
+#logo{
+	float:left;
+	}
+.col-xs-5{
+	width:49.333%;
+	}
+#menu-bottom li:first-child{
+	margin-left:0px;
+	}
+#logo img{
+	width:80%;
+	}
+.sm-blue ul ul{
+	margin-top:0px !important;
+	}
+#menu-bottom ul {
+    margin-left: -22px;
+}
+#cssmenu ul ul li a {
+    border-bottom: 1px solid rgba(150, 150, 150, 0.15);
+    padding: 11px 30px;
+    width: 226px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #DDD;
+    font-weight: 400;
+    background: #333 none repeat scroll 0% 0%;
+}
+
+#cssmenu ul ul li:hover > a,
+#cssmenu ul ul li a:hover {
+	background:#08C;
+	color:#FFF;
+}
+.online-img {
+    margin-left: -175px;
+}
+.login-button{
+	margin-left:16px;
+	}
+}
+
+/*-- menu bottm helpdesk line start--*/
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+/*-- menu bottm helpdesk line End --*/
+#slider1 img {
+    height: 89px;
+    width: 158px;
+}
+#slider1 .overview li {
+    height: 93px;
+    width: 160px;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+    color: #FFF;
+    background-color: #08C;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+    color: #FFF;
+    background-color: #08C;
+}

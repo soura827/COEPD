@@ -1,0 +1,159 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Participant.master.cs"
+    Inherits="Participant" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link type="text/css" href="../css/adminnav.css" rel="stylesheet" />
+    <title>.: COEPD Participant Login :.</title>
+    <script type="text/javascript" language="JavaScript">
+        this.history.forward(-1);
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../css/Admin/js/Sweetalert.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+     <style type="text/css">
+        .sup{
+        color:red;
+        font-size:large;
+        font-weight:bold;
+    }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="dashboard-container">
+            <div class="container">
+                <div id='cssmenu'>
+                    <ul>
+                        <%--<asp:Literal ID="ltDashboard" runat="server"></asp:Literal>--%>
+                         <li id="lisDashboard" runat="server" class=''><a href='Dashboard.aspx'><i class="fa fa-dashboard"></i>Dashboard</a>
+                        </li>
+                        <li class=''><asp:Literal ID="ltExams" runat="server"></asp:Literal></li>
+                        <asp:Literal ID="ltNurturing" runat="server"></asp:Literal>
+                        <%--<li id="litServiceRequest" runat="server" class=''><a href="ServiceRequest.aspx"><i class="fa fa-life-ring"></i>Ser. Request Escalation</a></li>--%>
+                        <%--<li  Id="lisResumePrep" runat="server" class=''><a href='MyResumePrep.aspx'><i class="fa fa-file-text"></i>Resume Prep</a>
+                        </li>
+                         <li  Id="lisMyResume" runat="server" class=''><a href='MyResume.aspx'><i class="fa fa-file-text"></i>My Resume</a>
+                        </li>
+                         <li  Id="lisApprovedResume" runat="server" class=''><a href='MyResumeApproved.aspx'><i class="fa fa-file-text"></i>Approved Resume</a>
+                        </li>   --%>                
+                        <li class=''><asp:Literal ID="ltDocuments" runat="server"></asp:Literal></li>
+                        <li class=''><asp:Literal ID="ltPlacements" runat="server"></asp:Literal></li>
+                        <li class=''><asp:Literal ID="ltCertificate" runat="server"></asp:Literal></li>
+                         <li class=''><asp:Literal ID="ltSession" runat="server"></asp:Literal></li>
+                        <%--<li class=''><asp:Literal ID="ltPostIdea" runat="server"></asp:Literal></li>--%>
+                        
+                        <%-- <li class=''><asp:Literal ID="ltCalendar" runat="server"></asp:Literal></li>--%>
+                       <%-- <li id="lisCalendar" runat="server" class=''><a href='Calendar.aspx'><i class="fa fa-calendar"></i>Calendar</a></li>--%>
+                        <%-- <asp:Literal ID="lbltimeshet" runat="server"></asp:Literal>--%>                     
+                      <li class=''> <asp:Literal ID="lbltimeshet" runat="server"></asp:Literal></li> 
+                     <li id="litimesheet" runat="server" class=''><a href='library.aspx'><i class='fa fa-book'></i>Library</a>
+                       </li>     
+                        <%--<li ID="lisIdeaPostSearch" runat="server" class=''><a href='Feedback.aspx'><i class="fa fa-exclamation-circle"></i>Escalation</a></li>--%>                 
+                 </ul>
+                   <%-- This is the old code, as per requirement We are not used now.   --%>
+                    <%--<ul>
+                        <li class=''><a href='Dashboard.aspx'><i class="fa fa-dashboard"></i>Dashboard</a>
+                        </li>
+                        <li class=''><a href='#'><i class="fa fa-group"></i>Nurturing</a>
+                            <ul>
+                                <li><a href="NurtureExamSearch.aspx">Exams </a></li>
+                                <li><a href="NurtureUMLSearch.aspx">UML Activity </a></li>
+                                <li><a href="NurtureToolSearch.aspx">Tools </a></li>
+                                <li><a href="NurtureBlogSearch.aspx">Blogs </a></li>
+                                <li><a href="NurtureForumSearch.aspx">Forums </a></li>
+                                <li><a href="NurtureDocumentationSearch.aspx">Documents </a></li>
+                                <li><a href="NurtureProjectSearch.aspx">Projects </a></li>
+                                <li><a href="NurtureResumeSearch.aspx">Resume Preparation </a></li>
+                                <li><a href="NurtureMockInterviewSearch.aspx">Mock Interviews </a></li>
+                            </ul>
+                        </li>
+                         <li  Id="lisResumePrep1" runat="server" class=''><a href='MyResumePrep.aspx'><i class="fa fa-file-text"></i>Resume Prep</a>
+                        </li>
+                         <li  Id="lisMyResume1" runat="server" class=''><a href='MyResume.aspx'><i class="fa fa-file-text"></i>My Resume</a>
+                        </li>
+                         <li  Id="lisApprovedResume1" runat="server" class=''><a href='MyResumeApproved.aspx'><i class="fa fa-file-text"></i>Approved Resume</a>
+                        </li>
+                        <li class=''><a href="#"><i class="fa fa-file-text"></i>Documents </a>
+                            <ul>
+                                <li><a href="Documents.aspx">Documents </a></li>
+                                <li><a href="ParticipantDocShareSearch.aspx">Special Documents </a></li>
+                            </ul>
+                        </li>
+                        <li class=''><a href='#'><i class="fa fa-info-circle"></i>Jobs</a>
+                            <ul>
+                                <li><a href='LatestJobSearch.aspx'>Latest Jobs</a></li>
+                                 <li><a href='JobSearch.aspx'>All Jobs</a></li>
+                            </ul>
+                        </li>
+                        <li class=''><a href='UserExamMaster.aspx'><i class="fa fa-bar-chart-o"></i>Exams</a>
+                        </li>
+                        <li class=''><a href='Certificate.aspx'><i class="fa fa-certificate"></i>Certificate</a>
+                        </li>
+                        <li class=''><a href='IdeaPostSearch.aspx'><i class="fa fa-lightbulb-o"></i>Post Your Idea</a></li>
+                         <li class=''><a href='Calendar.aspx'><i class="fa fa-calendar"></i>Calendar</a></li>
+                        <li class=''>
+                            <asp:Literal ID="lbltimeshet1" runat="server"></asp:Literal></li>
+
+                    </ul>--%>                       
+                  </div>                  
+                <div class="sub-nav">
+                    <ul>
+                        <li><a href="#" class="heading">
+                            <asp:Label ID="lblUsername" runat="server"></asp:Label></a></li>
+                        <li><a href="#" class="heading">
+                            <asp:Label ID="lblSubscriptionExpiredOn" runat="server" ForeColor="#ff9900" Font-Bold="true"></asp:Label></a></li>
+                        <%--<li class=""><a href="library.aspx">Library</a></li>--%>
+                    </ul>
+                    <div class="custom-search">
+                    <%--<div class="heading">--%>
+                        <ul>
+                            <%--<li class=""><a href="library.aspx">Library</a> <b>|</b></li>--%>
+                            <li class=""><a href="terms_conditions.aspx">Terms and Conditions</a><b>|</b> </li>
+                            <li class=""><a href="ChangePwd.aspx">Change Password</a> </li>
+                            <li class=""><a href="logout.aspx">Signout</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="success-bg sub-nav">
+                        <div class="col-sm-12">
+                            <asp:Label ID="lblGoal" runat="server" ForeColor="White" Font-Bold="true" Font-Size="Larger"></asp:Label>
+                        </div>
+                    </div>
+                <div class="dashboard-wrapper">
+                    <!-- Row Start -->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                    <!-- Row End -->
+                    <!-- Row Start -->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                    <!-- Row End -->
+                </div>
+                <footer>
+                <p>&nbsp;</p>
+            </footer>
+            </div>
+       </div>
+        <%--<script type="text/javascript" src="../App_Themes/admin/js/jquery.js"></script>
+        <script type="text/javascript" src="../App_Themes/admin/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../App_Themes/admin/js/menu.js"></script>--%>
+
+        <script type="text/javascript" src="../js/jquery.js"></script>
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.scrollUp.js"></script>
+        <!-- Custom JS -->
+        <script type="text/javascript" src="../js/menu.js"></script>
+    </form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+
+ runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+
+
+<asp:GridView runat="server" CssClass="table table-responsive table-striped table-bordered table-hover no-margin" Width=100%>
+    <RowStyle CssClass="RowStyle" />
+    <EmptyDataRowStyle CssClass="EmptyRowStyle" />
+    <PagerStyle CssClass="PagerStyle" />
+    <SelectedRowStyle CssClass="SelectedRowStyle" />
+    <HeaderStyle CssClass="HeaderStyle" />
+    <EditRowStyle CssClass="EditRowStyle" />
+    <AlternatingRowStyle CssClass="AltRowStyle" />
+     <FooterStyle CssClass="FooterStyle" />
+</asp:GridView>
+--%>
+
+
+<asp:TextBox runat="server" CssClass="form-control"></asp:TextBox>
+<asp:LinkButton runat="server" CssClass="btn btn-success btn-sm"/>
+<asp:Button runat="server" CssClass="btn btn-info"/>
+<asp:DropDownList runat="server" CssClass="form-control"></asp:DropDownList>
+<asp:CheckBox runat="server" CssClass="form-control"></asp:CheckBox>
+<asp:Button runat="server" SkinID="btnBack" CssClass="btn btn-success"></asp:Button>
+<asp:Button runat="server" SkinID="btnWarning" CssClass="btn btn-warning"></asp:Button>
+<asp:Button runat="server" SkinID="btnGreen" CssClass="btn btn-success"></asp:Button>
+
+<asp:LinkButton  SkinID="view" runat="server" CssClass ="btn btn-info btn-xs"  />
+<asp:Button  SkinID="addnew" ToolTip="Add New"  runat="server" CssClass ="btn btn-success" Text="Add New" />
+<asp:LinkButton  SkinID="delete" ToolTip="Delete"  runat="server" CssClass ="btn btn-warning btn-xs" Text="Delete"  />
+<asp:LinkButton SkinId="edit" ToolTip="Edit" runat="server" CssClass="btn btn-info btn-xs" Text="Edit"  />
+<asp:LinkButton SkinId="Orange" runat="server" CssClass="btn btn-warning btn-xs" />
+<asp:LinkButton SkinId="Green" runat="server" CssClass="btn btn-success btn-xs" />
+
+<asp:GridView runat="server" CssClass="table table-responsive table-striped table-bordered table-hover no-margin" Width=100%>
+</asp:GridView>
+

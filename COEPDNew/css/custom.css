@@ -1,0 +1,40 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.header{
+    height:30px;
+	background:#2F5095;
+	color:#FFF;
+	font-size:16PX;
+	font-weight:600;
+	padding:5px 20px;
+}
+.content{
+	padding:20px 20px;	
+}
+.form{
+	padding:5px 20px;	
+}
+.name{
+	float:left;	
+	padding-right:10px;
+	width:150px;
+}
+.button{
+	padding:10px 0px 20px 170px;
+}
+.footer{
+	background:#2f5095;
+	height:5px;	
+}
+.logo-img{
+	padding:10px;
+}
+.pay{
+    /*padding-bottom:200px !important;*/
+    padding:100px;
+}
+ .custom
+ {
+        background-color:#0088CC;
+        height:120px;
+ }

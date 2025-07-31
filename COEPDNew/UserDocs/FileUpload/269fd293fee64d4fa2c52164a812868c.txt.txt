@@ -1,0 +1,67 @@
+Partivipant fee map table
+-------------------------
+
+Status Flags:
+-----------
+
+Register No batch
+--> 1 is Batch mapped
+--> 0 is No Batch
+----------------------------
+
+-->Installment Status Active 
+ by default is 1
+  Expired Date is 0
+----------------------------
+---> Payment Status
+ If paid is 1
+  After Expire date No paymentReviced is 0
+---------------------------
+
+--> Pending Status
+ If already paid is 0 (full paymentor above)
+   it becomes 1 (part payment or no payment)
+-----------------------------------------
+
+--> BadDebt Status
+ If < IsBadDebt is 1 ( pending payment Status should be 1 and Installment date is <45 days
+ other wise is 0
+--------------------------------------
+
+table Columns:
+Installment Fees
+Installment Date
+Recipet No
+Recipet Date
+Amt Paid ( Inculde Fee + GST )
+Total paid (previous paid amount)
+Total Due
+Installment Pending Amt
+---------------------
+
+Bussiness Logic
+Collections - Revenue 
+Payment status =1
+Receipt Date and Amount Paid 
+
+Pending Payments 
+Pending Status =1
+Installemnt Date < 45 days
+Installment Pending amount 
+
+Schedule Payments 
+Installment Status Active =1
+and Installment Date>= today
+
+Bad Debts 
+Pending Status =1
+Bad Debts status =1
+Installement Date <=45 Days
+
+
+----------------------------------
+
+
+  
+
+

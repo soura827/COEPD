@@ -1,0 +1,72 @@
+
+create table InvEmp
+(
+ id int identity(1,1) primary key,
+ [xml] xml
+)
+
+create procedure employxml
+(
+
+ @xml xml
+
+)
+as
+begin
+
+insert into InvEmp (xml) values (@xml)
+
+end
+
+select * from InvEmp
+
+
+
+
+
+
+
+--select * from NewEmployee
+
+
+
+
+
+
+DECLARE @XMLDATA XML =
+'<xml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <employee>
+    <Name>DFHFHFH</Name>
+    <Email>YUYIUYIYI</Email>
+    <Mobile>5645636</Mobile>
+    <Designation>FYFYFYF</Designation>
+  </employee>
+  <employee>
+    <Name>FYFYFFY</Name>
+    <Email>JLJLJ</Email>
+    <Mobile>1241416</Mobile>
+    <Designation>GUGUG</Designation>
+  </employee>
+  <employee>
+    <Name>FYFYFFY</Name>
+    <Email>JLJLJ</Email>
+    <Mobile>1241416</Mobile>
+    <Designation>GUGUG</Designation>
+  </employee>
+</xml>'
+
+Select 
+              Parent.Data.value('Name[1]','nvarchar(200)') As Name,
+              Parent.Data.value('Email[1]','nvarchar(200)') As Email,
+              Parent.Data.value('Mobile[1]','int') As Mobile,
+			   Parent.Data.value('Designation[1]','nvarchar(200)') As Designation
+			  into #tmp
+              From @XMLDATA.nodes('xml/employee') Parent(data)
+
+
+
+select * from #tmp
+
+drop table #tmp
+
+

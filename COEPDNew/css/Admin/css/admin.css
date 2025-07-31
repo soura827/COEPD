@@ -1,0 +1,105 @@
+﻿.navbar-default1 {
+    /*background-color: #62a0b5 !important;*/
+    /*background-color:#f3907a !important;*/
+    /*background-color:#ef4626 !important;*/
+    background-color: #ffffff !important;
+    /*border-color: #62a0b5 !important;*/
+    border: 0;
+    border-radius: 0;
+    padding: 10px 0;
+    -webkit-box-shadow: 0 1px 10px 0 rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 1px 10px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.15);
+}
+
+.navbar {
+    margin-bottom: -1px !important;
+    height: 70px;
+    z-index: 1;
+    border-bottom-color: #62a0b5;
+}
+
+.navbar-default1 .navbar-brand {
+    color: #ecf0f1;
+}
+
+.navbar-default1 .navbar-nav > li > a {
+    color: #696969 !important;
+}
+
+.navbar-default1 .navbar-nav > li:hover {
+    border-bottom: 2px solid #df5938;
+}
+
+.navbar-default1 .navbar-nav > li > a::after {
+    color: #62a0b5 !important;
+}
+
+.navbar-default1 .navbar-brand:hover, .navbar-default1 .navbar-brand:focus {
+    color: #95a5a6;
+    background-color: transparent;
+}
+
+.navbar-default1 .navbar-nav > .active > a, .navbar-default1 .navbar-nav > .active > a:focus, .navbar-default1 .navbar-nav > .active > a:hover {
+    color: #95a5a6;
+    background-color: transparent;
+}
+
+.navbar-default1 .navbar-nav > .open > a, .navbar-default1 .navbar-nav > .open > a:hover, .navbar-default1 .navbar-nav > .open > a:focus {
+    color: #ecf0f1;
+    background-color: transparent;
+}
+
+.navbar-default1 .navbar-nav > li > a {
+    color: #ecf0f1;
+}
+
+    .navbar-default1 .navbar-nav > li > a:hover, .navbar-default1 .navbar-nav > li > a:focus {
+        color: #95a5a6;
+        background-color: transparent;
+    }
+
+.dropdown-menu {
+    border: 0;
+    border-radius: 0;
+}
+
+    .dropdown-menu > li > a {
+        padding: 5px 20px;
+    }
+
+        .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+            color: #ecf0f1;
+            text-decoration: none;
+            background-color: #2c3e50;
+        }
+
+.navbar-default1 .navbar-toggle {
+    border-color: transparent;
+}
+
+    .navbar-default1 .navbar-toggle:hover, .navbar-default1 .navbar-toggle:focus {
+        background-color: transparent;
+    }
+
+    .navbar-default1 .navbar-toggle .icon-bar {
+        background-color: #ecf0f1 !important;
+    }
+
+.navbar-default1 .navbar-collapse, .navbar-default1 .navbar-form {
+    border-color: transparent;
+}
+
+.navbar-brand img {
+    margin: -25px !important;
+    width: 300px;
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar {
+        margin-bottom: -1px !important;
+        height: auto !important;
+        z-index: 1;
+        border-bottom-color: #62a0b5;
+    }
+}

@@ -1,0 +1,130 @@
+﻿-filefi<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin" %>
+<%@ Register Src="~/Controls/Admin.ascx" TagName="Admin" TagPrefix="uc1" %>
+<%@ Register Src="~/Controls/Employee.ascx" TagName="Employee" TagPrefix="uc2" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link type="text/css" href="../css/adminnav.css" rel="stylesheet" />
+    <style type="text/css">
+        .sup{
+        color:red;
+        font-size:x-large;
+        font-weight:bold;
+    }
+    </style>
+    <title>.: COEPD Admin Pannel :.</title>
+    <script type="text/javascript">
+        this.history.forward(-1);
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../css/Admin/js/Sweetalert.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="dashboard-container">
+            <div class="container">
+                <!-- Top Nav Start -->
+                <div id='cssmenu'>
+                    <ul>
+                        <asp:Literal ID="ltAdmin" runat="server"></asp:Literal>
+                        <asp:Literal ID="ltConfigure" runat="server"></asp:Literal>
+                        <asp:Literal ID="ltCMS" runat="server"></asp:Literal>
+                        <asp:Literal ID="ltLeads" runat="server"></asp:Literal>
+                        <asp:Literal ID="ltOffice" runat="server"></asp:Literal>
+                        <asp:Literal ID="ltAccounting" runat="server"></asp:Literal>
+                        <asp:Literal ID="ltTraining" runat="server"></asp:Literal>
+                        <asp:Literal ID="ltExam" runat="server"></asp:Literal>
+                        <asp:Literal ID="ltInventory" runat="server"></asp:Literal>
+                       <%-- <asp:Literal ID="ltNurture" runat="server"></asp:Literal>--%>
+                        <asp:Literal ID="ltNewNurturing" runat="server"></asp:Literal>
+                        <asp:Literal ID="ltPlacements" runat="server"></asp:Literal>
+                        <asp:Literal ID="ltReports" runat="server"></asp:Literal>
+                        <asp:Literal ID="ltHrSlots" runat="server"></asp:Literal>
+                         <asp:Literal ID="ltFMS" runat="server"></asp:Literal>
+                        <asp:Literal ID="ltSession" runat="server"></asp:Literal>
+                       <%-- <asp:Literal ID="ltHR-Slots" runat="server"></asp:Literal>--%>
+
+                        <%--This Functionality is used to get Default Features along with Module Name when Creating a new Employee --%>
+                        <%--<li id="liCompany" runat="server" class=''><a href='#'><i class="fa fa-group"></i>Company</a>
+                            <ul>
+                                <li><a href="LeaveSearch.aspx"> Leaves </a></li>
+                                <li><a href="EmployeeDocumentSearch.aspx"> My Documents </a></li>
+                                <li><a href="EmployeeDocumentAssign.aspx"> Shared Documents </a></li>
+                                <li><a href="EmployeeSharedDocument.aspx"> Shared Documents from Others </a></li>                              
+                            </ul>
+                        </li>--%>
+                    </ul>
+                </div>
+                <!-- Top Nav End -->
+                <!-- Sub Nav End -->
+                <div class="sub-nav">
+                    <ul>
+                        <li><a href="#" class="heading">
+                            <asp:Label ID="lblUsername" runat="server"></asp:Label></a></li>
+                    </ul>
+                    <div class="custom-search">
+                        <ul>
+                            <li class="#"><a href="ChangePwd.aspx">Change Password</a> </li>
+                            <li class="#"><a href="logout.aspx">Signout</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Sub Nav End -->
+                <!-- Dashboard Wrapper Start -->
+                <div class="dashboard-wrapper">
+                    <!-- Row Start -->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="widget">
+                                <div class="widget-body">
+                                    <a class="btn btn-primary" href="Dashboard.aspx">Dashboard</a>
+                                    <%--<a class="btn btn-success" href="TimeSheetSearch.aspx">Time Sheet Entry</a>--%>
+                                    <a class="btn btn-info" href="MyTaskSearch.aspx">My Tasks
+                                    </a>
+                                    <a class="btn btn-warning" href="HolidayList.aspx">Holidays List 
+                                    </a>
+                                    <a class="btn btn-success" href="IdeaPostSearch.aspx">Post Your Idea
+                                    </a>
+                                    <a class="btn btn-danger" href="SupportSearch.aspx">Tech Support
+                                    </a>
+                                    <a class="btn btn-info" href="TrainingCalendar.aspx">Trainings Calender
+                                    </a>
+                                    <a class="btn btn-warning" href="CompanyPolicies.aspx">Company Policies
+                                    </a>
+                                    <a class="btn btn-success" href="EmployeeResponsibilities.aspx">Roles & Responsibilities
+                                    </a>
+                                    <a class="btn btn-info" href="BookConferenceHall.aspx">Conference Rooms
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row End -->
+
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <asp:ContentPlaceHolder ID="cpLeft" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                        <div class="col-lg-12 col-md-12">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p>&nbsp;</p>
+            </footer>
+        </div>
+        <script type="text/javascript" src="../js/jquery.js"></script>
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.scrollUp.js"></script>
+        <!-- Custom JS -->
+        <script type="text/javascript" src="../js/menu.js"></script>
+    </form>
+</body>
+</html>

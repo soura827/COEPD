@@ -1,0 +1,514 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Public.master.cs" Inherits="Public" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head runat="server">
+    <style type="text/css">
+        .sup{
+        color:red;
+        font-size:large;
+        font-weight:bold;
+    }
+    </style>
+   <title><asp:ContentPlaceHolder ID="title" runat="server">COEPD</asp:ContentPlaceHolder></title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="img/Fevicons/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="img/Fevicons/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="img/Fevicons/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="img/Fevicons/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/Fevicons/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="img/Fevicons/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="img/Fevicons/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="img/Fevicons/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/Fevicons/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/Fevicons/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/Fevicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="img/Fevicons/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/Fevicons/favicon-16x16.png" />
+    <link rel="manifest" href="img/Fevicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="img/Fevicons/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <%--<link rel="icon" href="img/favicon.ico" />--%>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="msvalidate.01" content="AFD652CDAFF17367C18360B7439B3A09" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/menu.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/style.js" type="text/javascript"></script>
+
+    <!-- Google tag (gtag.js) This tag created in venkat.coepd@cooepd.com -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B0CDFXDWD1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-B0CDFXDWD1');
+</script>
+
+    <%--<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B0CDFXDWD1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B0CDFXDWD1');
+</script>--%>
+
+   <%-- <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-218776068-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-218776068-1');
+</script>--%>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+   <%-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+     [if lt IE 9]>
+      <script src="../../assets/js/ie8-responsive-file-warning.js"></script>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]--%>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- Header top Section Start -->
+        <div class="container-fluid top-content-row">
+            <div class="col-xs-12 col-sm-12 col-md-12 ">
+                <div class="top-content-row1">
+                    <div class="top-line-content">
+                        <ul>
+                            <li style="float:left;"><asp:Label ID="lblStatistics" ForeColor="Yellow" runat="server"></asp:Label></li>
+                            <li><a href="login.html">Login </a><b>|</b></li>
+                            <li><a href="https://www.coepd.com/post-job-requirement.html">Post Your Requirement </a><b>|</b></li>
+                            <li><a href="https://www.coepd.com/certification-verify.html">Verify Certification </a><b>|</b></li>
+                            <li><a href="https://www.coepd.com/verifyEmployeeAwards.html">Verify Awards </a><b>|</b></li>
+                            <li><a href="https://www.coepd.com/Careers.html">Careers </a><b>|</b> </li>
+                            <li><a href="https://www.coepd.com/downloads.html">Downloads</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <%--<div class="Statisticsdata" id="divStatistics" runat="server">
+            <ul>
+                <asp:DataList ID="sdl" runat="server">
+                    <ItemTemplate>
+                        <li>
+                            <%#Eval("BatchesCompleted")%></li>
+                       <li> <%#Eval("StudentsTrained")%></li>
+                                 <li>       <%#Eval("Placements")%></li>
+                                     <li>   <%#Eval("Corporates")%></li>
+                                    <li>    <%#Eval("BSchools")%></li>
+                    </ItemTemplate>
+                </asp:DataList>
+            </ul>
+        </div>--%>
+        <div class="container-fluid">
+            <div class="col-md-2 col-xs-12">
+                <a href="index.html">
+                    <img src="img/logo.jpeg" alt="Coepd" title="Coepd" class="img-rounded" width="200" height="74" /></a>
+            </div>
+            <div class="col-md-10 col-xs-12">
+                <div class="header-row-menu">
+                    <div class="navbar yamm navbar-default">
+                        <div class="navbar-header">
+                            <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle">
+                                <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                            </button>
+                            <%--<a href="#" class="navbar-brand">&nbsp;</a>--%>
+                        </div>
+                        <div id="navbar-collapse-1" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <!-- Classic list -->
+                                <li><a href="index.html">Home</a></li>
+                                <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Trainings<b
+                                    class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <!-- Content container to add padding -->
+                                            <div class="yamm-content">
+                                                <div class="row">
+                                                    <ul class="col-sm-3 list-unstyled">
+                                                        <li>
+                                                            <p>
+                                                                <strong>BA</strong>
+                                                            </p>
+                                                        </li>
+                                                        <li><a href="https://www.coepd.com/business-analyst-training.html">ClassRoom Training</a></li>
+                                                        <li><a href="https://www.coepd.com/business-analyst-online-training.html">Online Training</a></li>
+                                                        <li><a href="https://www.coepd.com/business-analyst-corporate-trainings.html">Corporate Training</a></li>
+                                                        <li><a href="https://www.coepd.com/knowledge-partner.html">Knowledge Partner</a></li>
+                                                        <li><a href="https://www.coepd.com/business-analyst-training-content.html">Syllabus </a></li>
+                                                        <li><a href="https://www.coepd.com/business-analyst-training-advantages.html">Advantages </a></li>
+                                                        <li><a href="https://www.coepd.com/business-analyst-training-testimonials.html">Testimonials </a></li>
+                                                        <li><a href="https://www.coepd.com/scrum-training.html">Scrum</a></li>
+                                                        <li><a href="https://www.coepd.com/business-analyst-training-on-job-support.html">On Job Support </a></li>
+                                                        <li><a href="https://www.coepd.com/trainer-profile.html">Trainers</a></li>
+                                                        
+                                                    </ul>
+                                                    <ul class="col-sm-3 list-unstyled">
+                                                        <li>
+                                                            <p>
+                                                                <strong>Locations</strong>
+                                                            </p>
+                                                        </li>
+                                                        <li><a href="https://www.coepd.com/business-analyst-training-in-hyderabad.html">Hyderabad </a></li>
+                                                        <li><a href="https://www.coepd.com/business-analyst-training-in-chennai.html">Chennai </a></li>
+                                                        <li><a href="https://www.coepd.com/business-analyst-training-in-pune.html">Pune </a></li>
+                                                        <li><a href="https://www.coepd.com/business-analyst-training-in-mumbai.html">Mumbai </a></li>
+                                                        <li><a href="https://www.coepd.com/business-analyst-training-in-vizag.html">Visakhapatnam </a></li>
+                                                        <li><a href="https://www.coepd.com/business-analyst-training-in-bangalore.html">Bangalore </a></li>
+                                                        <li><a href="https://www.coepd.com/business-analyst-training-in-delhi.html">Delhi-NCR </a></li>
+                                                        <li><a href="https://coepd.com/business-analyst-online-training.html">Online Training </a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Internships<b
+                                    class="caret"></b></a>
+                                    <ul role="menu" class="dropdown-menu">
+                                        <li><a href="https://www.coepd.com/business-analyst-training-internships.html">BA </a></li>
+                                        <li><a href="https://www.coepd.com/web-designing-internships.html">Web Designing </a></li>
+                                        <li><a href="https://www.coepd.com/analytics-internship.html">Data Science</a></li>
+                                        <li><a href="https://www.coepd.com/dotnet-internship.html">DotNet</a></li>
+                                        <li><a href="https://www.coepd.com/digital-marketing-internship.html">Digital Marketing</a></li>
+                                    </ul>
+
+                                </li>
+                                <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Placements<b
+                                    class="caret"></b></a>
+                                    <ul role="menu" class="dropdown-menu">
+                                        <li><a href="https://www.coepd.com/business-analyst-ba-placements-jobs-vacancies.html">BA Placements </a></li>
+                                        <li><a href="https://www.coepd.com/coepd-clients.html">COEPD Clients </a></li>
+                                        <li><a href="https://www.coepd.com/business-analyst-ba-placements-reviews-feedback.html">Placement Reviews</a></li>
+                                        <li><a href="https://www.coepd.com/coepd-business-analyst-ba-success-stories.html">Success Stories</a></li>
+                                    </ul>
+
+                                </li>
+                                <%--<li><a href="coepd-talent-in-corporates.html">Placements</a></li> --%>
+                                <%--<li><a href="gallery.html">Gallery</a></li>--%>
+                                <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Certifications<b
+                                    class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <!-- Content container to add padding -->
+                                            <div class="yamm-content">
+                                                <div class="row">
+                                                    <ul class="col-sm-4 list-unstyled">
+                                                        <li>
+                                                            <p>
+                                                                <strong>Certifications</strong>
+                                                            </p>
+                                                        </li>
+                                                        <li><a href="https://www.coepd.com/business-analyst-certifications.html">BA Certifications</a></li>
+                                                        <li><a href="https://www.coepd.com/cpoa-certification.html">CPOA Certification</a></li>
+                                                        <li><a href="https://www.coepd.com/ivy-global-academy-international-certifications.html">IVY Global Academy</a></li>
+                                                    </ul>
+                                                    <ul class="col-sm-8 list-unstyled">
+                                                        <li>
+                                                            <p>
+                                                                <strong>IVY Global Academy</strong>
+                                                            </p>
+                                                        </li>
+                                                        <li><a href="https://www.coepd.com/ivy-global-academy-citba-certified-it-business-analyst.html">Certified IT Business Analyst (CITBA) </a></li>
+                                                        <li><a href="https://www.coepd.com/ivy-global-academy-citbap-certified-it-business-analyst-practitioner-professional.html">Certified IT Business Analyst Practitioner (CITBAP) </a></li>
+                                                        <li><a href="https://www.coepd.com/ivy-global-academy-citpo-certified-it-product-owner.html">Certified IT Product Owner (CITPO) </a></li>
+                                                        <li><a href="https://www.coepd.com/ivy-global-academy-citsd-certified-it-scrum-developer.html">Certified IT Scrum Developer (CITSD) </a></li>
+                                                        <li><a href="https://www.coepd.com/ivy-global-academy-citsm-certified-it-scrum-master.html">Certified IT Scrum Master (CITSM) </a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="https://www.coepd.com/business-analyst-jobopenings.html">Job Openings</a></li>
+                                <li><a href="https://www.coepd.com/business-analyst-online-exams.html">Online Exams</a></li>
+                                <li><a href="https://www.coepd.com/business-analyst-training-faq.html">FAQ's</a></li>
+                                <li><a href="https://www.coepd.com/coepd-payments.aspx">
+                                    <button type="button" class="btn btn-danger">
+                                        Participant Payment</button></a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu-bottom">
+            <div class="container menu-bottom">
+                <div>
+                    <div class="col-md-2 col-sm-4">
+                        <a href="#"><i class="fa fa-skype"></i>COEPD-Skype</a>
+                    </div>
+                    <div class="col-md-2 col-sm-4">
+                        <a href="tel:+ 91-9000155700"><i class="fa fa-phone"></i>+91 9000155700</a>
+                    </div>
+                    <div class="col-md-2 col-sm-4">
+                        <a href="mailto:helpdesk@coepd.com"><i class="fa fa-envelope"></i>helpdesk@coepd.com</a>
+                    </div>
+                    <div class="col-md-2 col-sm-4">
+                        <a href="http://blog.coepd.com" target="_blank"><i class="fa fa-rss"></i>Blog</a>
+                    </div>
+                    <div class="col-md-2 col-sm-4">
+                        <a href="http://forum.coepd.com" target="_blank"><i class="fa fa-rss"></i>Forum </a>
+                    </div>
+                    <div class="col-md-2 col-sm-4">
+                        <a href="https://www.coepd.com/trainings-calendar.html"><i class="fa fa-calendar-check-o"></i>Training Calendar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <asp:ContentPlaceHolder ID="cpContent" runat="server">
+        </asp:ContentPlaceHolder>
+        <br />
+        <!-- Talent in corp Section Start -->
+        <div id="talent">
+            &nbsp;
+        <div class="heading-strip">
+            <div class="container">
+                <div>
+                    <h3>
+                        <span>COEPD</span> Talent in Corporates
+                    </h3>
+                </div>
+            </div>
+        </div>
+            <div>
+                <p class="microsoft marquee">
+                    <span class="corporate-icons">
+                        <img src="img/Corp/corp-1.png" alt="Infotech" class="img-thumbnail" />
+                        <img src="img/Corp/corp-2.png" alt="IBM" class="img-thumbnail" />
+                        <img src="img/Corp/corp-3.png" alt="HCL" class="img-thumbnail" />
+                        <img src="img/Corp/corp-4.png" alt="Infosys" class="img-thumbnail" />
+                        <img src="img/Corp/corp-5.png" alt="Deloitte" class="img-thumbnail" />
+                        <img src="img/Corp/corp-6.png" alt="TCS" class="img-thumbnail" />
+                        <img src="img/Corp/corp-7.png" alt="L & T" class="img-thumbnail" />
+                        <img src="img/Corp/corp-8.png" alt="Wipro" class="img-thumbnail" />
+                        <img src="img/Corp/corp-9.png" alt="Infotech" class="img-thumbnail" />
+                        <img src="img/Corp/corp-10.png" alt="CSS Corp" class="img-thumbnail" />
+                        <img src="img/Corp/corp-11.png" alt="CA Technologies" class="img-thumbnail" />
+                    </span>
+                </p>
+            </div>
+        </div>
+        <!-- Talent in corp Section End -->
+        <!-- Testimonial Section
+    Start -->
+        <div id="testimonials">
+            &nbsp;
+        <div class="heading-strip">
+            <div class="container">
+                <div>
+                    <h3>Our <span>Happy</span> Participants Say it All
+                    </h3>
+                </div>
+            </div>
+        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+                            <!-- Carousel items -->
+                            <div class="carousel-inner carousel-padding">
+                                <div class="active item">
+                                    <blockquote>
+                                        <p>"Providing much needed clarity on topic with practical Case Studies." </p>
+                                        <br />
+                                        <strong style="color: #fff;">-T Shekar</strong>
+                                    </blockquote>
+                                </div>
+                                <div class="item">
+                                    <blockquote>
+                                        <p>"Coepd seems to be the topmost & qualitative institute in Hyderabad." </p>
+                                        <br />
+                                        <strong style="color: #fff;">- Kiran</strong>
+                                    </blockquote>
+                                </div>
+                                <div class="item">
+                                    <blockquote>
+                                        <p>"Faculty is highly knowledgable about the current IT industry." </p>
+                                        <br />
+                                        <strong style="color: #fff;">- Rakesh A</strong>
+                                    </blockquote>
+                                </div>
+                                <div class="item">
+                                    <blockquote>
+                                        <p>
+                                            "The best BA Training Institute that I have ever come across and strongly recommend
+                                    my friends to COEPD."
+                                        </p>
+                                        <br />
+                                        <strong style="color: #fff;">- Vikrant</strong>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- Testimonial Section End -->
+            <!--
+    Footer Top Section Start -->
+            <div id="footer">
+                <div class="container">
+                    <div class="col-md-4
+    border-right">
+                        <h5>Home</h5>
+                        <ul>
+                            <li><i class="fa fa-angle-double-right"></i><a href="https://www.coepd.com/index.html">Home</a></li>
+                            <li><i class="fa fa-angle-double-right"></i><a href="https://www.coepd.com/business-analyst-training.html">BA Trainings</a></li>
+                            <li><i class="fa fa-angle-double-right"></i><a href="https://www.coepd.com/business-analyst-training-internships.html">BA Internships</a></li>
+                            <li><i class="fa fa-angle-double-right"></i><a href="https://www.coepd.com/business-analyst-training-on-job-support.html">On Job Support</a></li>
+                            <li><i class="fa fa-angle-double-right"></i><a href="https://www.coepd.com/business-analyst-certifications.html">Certifications</a></li>
+                            <li><i class="fa fa-angle-double-right"></i><a href="https://www.coepd.com/business-analyst-jobopenings.html">Job Openings</a></li>
+                            <li><i class="fa fa-angle-double-right"></i><a href="https://www.coepd.com/business-analyst-online-exams.html">Online Exams</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 border-right">
+                        <h5>More About Coepd</h5>
+                        <ul>
+                            <li><i class="fa fa-angle-double-right"></i><a href="https://www.coepd.com/business-analyst-training-advantages.html">Why COEPD?</a></li>
+                            <li><i class="fa fa-angle-double-right"></i><a href="https://www.coepd.com/business-analyst-training-content.html">Our Workbook</a></li>
+                            <li><i class="fa fa-angle-double-right"></i><a href="https://www.coepd.com/coepd-talent-in-corporates.html">Our Talent in Corporates</a></li>
+                            <li><i class="fa fa-angle-double-right"></i><a href="https://www.coepd.com/business-analyst-training-testimonials.html">Testimonials </a></li>
+                            <li><i class="fa fa-angle-double-right"></i><a href="http://blog.coepd.com/" target="_blank">Blogs</a></li>
+                            <li><i class="fa fa-angle-double-right"></i><a href="http://forum.coepd.com/" target="_blank">Forums</a></li>
+                            <li><i class="fa fa-angle-double-right"></i><a href="https://www.coepd.com/business-analyst-training-faq.html">Faq's</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Trainings
+                        </h5>
+                        <ul>
+                            <%--                    <li><i class="fa fa-angle-double-right"></i><a href="#">Weekend Workshop</a></li>
+                    <li><i class="fa fa-angle-double-right"></i><a href="#">4 Continuous Days</a></li>
+                    <li><i class="fa fa-angle-double-right"></i><a href="#">Daily Batch</a></li>
+                    <li><i class="fa fa-angle-double-right"></i><a href="#">Only Sundays</a></li>--%>
+                            <li><i class="fa fa-angle-double-right"></i><a href="https://www.coepd.com/business-analyst-training-content.html">Syllabus</a></li>
+                            <li><i class="fa fa-angle-double-right"></i><a href="https://www.coepd.com/business-analyst-online-training.html">Online Training</a></li>
+                            <li><i class="fa fa-angle-double-right"></i><a href="https://www.coepd.com/business-analyst-corporate-trainings.html">Corporate Training</a></li>
+                        </ul>
+                    </div>
+                   <%-- <div class="col-md-3">
+                        <h5>A Unit of
+                        </h5>
+                        <br />
+                        <ul>
+                            <li><a href="http://www.coepdglobal.com" target="_blank">
+                                <img src="img/logo.jpeg" alt="COEPD Global" title="COEPD Global" class="img-rounded" width="200px" height="74px" /></a>
+                            </li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.coepdglobal.com" target="_blank">www.coepdglobal.com</a> </li>
+                        </ul>
+                        <br />
+                        <br />
+                        <br />
+                    </div>--%>
+
+                </div>
+                <div class="container footer-bottom-row">
+                    <div class="col-xs-12 col-sm-4 col-ms-4 col-lg-4 footer-iiba-logo">
+                       <a href="https://my.iiba.org/s/searchdirectory?id=a251N000002GPgi&_ga=2.77370899.725313108.1627538044-581366912.1627538044" target="_blank"> <img src="img/iiba.jpg" alt="IIBA" title="IIBA" class="img-rounded" /></a>
+
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-ms-8 col-lg-8 iiba-content">
+                        <p>IIBA® , INTERNATIONAL INSTITUTE OF BUSINESS ANALYSIS®, CCBA® , CBAP®,  and CERTIFIED BUSINESS ANALYSIS PROFESSIONAL® are registered trademarks or certification marks owned by International Institute of Business Analysis in one or more countries. ECBA™, CBATL™, Entry Certificate in Business  Analysis™, Certification of Capability in Business Analysis™, and Certified Business Analysis Thought Leader™ are trademarks owned by International Institute of Business Analysis. EEP and the EEP logo are trademarks owned by International Institute of Business Analysis.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Top Section
+    End -->
+            <!-- Footer Section Start -->
+            <div id="footer-last">
+                <div class="container">
+                    <div class="col-md-5">
+                        COEPD - Center of Excellence for Professional Development
+                    </div>
+                    <div class="col-md-5">
+                        <a href="https://www.coepd.com/privacypolicy.html">Privacy Policy</a> &nbsp; | &nbsp; <a href="https://www.coepd.com/refundpolicy.html">Refund Policy</a> &nbsp;|&nbsp;<a href="https://www.coepd.com/terms-conditions.html">Terms
+                    of Use </a>
+                    </div>
+                </div>
+            </div>
+            <!--
+    Footer Section End -->
+            <!-- Quick Enquiry Section Start -->
+            <div class="btncls" style="alignment-adjust: central;" id="quick-enquiry">
+                <a href="https://www.coepd.com/business-analyst-training-enquiry-form.html">
+                    <input class="pop-up" type="button" value="Quick Enquiry" /></a>
+            </div>
+            <!-- Quick
+    Enquiry Section End -->
+            <!-- Sidebar Social Media Start -->
+            <aside id="sticky-social">
+    <ul> 
+        
+           <li><a href="https://web.whatsapp.com/send?phone=919000155700&submit=Continue" class="entypo-whatsapp" target="_blank"><i class="fa fa-whatsapp"></i><span>Whatsapp</span></a></li>
+             <li><a href="https://api.whatsapp.com/send?phone=919000155700&amp;submit=Continue" class="mobile-whatsapp" target="_blank"><i class="fa fa-whatsapp"></i><span>Whatsapp</span></a></li>
+         <li><a href="https://www.facebook.com/BusinessAnalystTraining" class="entypo-facebook"
+    target="_blank"><i class="fa fa-facebook"></i><span>Facebook</span></a></li>
+         <li><a href="https://twitter.com/The_Coepd" class="entypo-twitter" target="_blank"><i class="fa
+    fa-twitter"></i><span>Twitter</span></a></li> 
+        <li><a href="https://www.youtube.com/channel/UC0mzD07xFxMqLK0fx621ZNA"
+    class="entypo-gplus" target="_blank"><i class="fa fa-youtube-play"></i><span>YouTube</span></a></li>
+    <li><a href="https://www.linkedin.com/in/coepd-center-of-excellence-for-professional-development-1ba441197/" class="entypo-linkedin" target="_blank"><i
+    class="fa fa-linkedin"></i><span>LinkedIn</span></a></li> 
+
+        <li><a href="https://www.instagram.com/p/CSOKt-gqXv9/?utm_medium=copy_link" class="entypo-instagram" target="_blank"><i
+    class="fa fa-instagram"></i><span>Instagram</span></a></li> 
+
+       <%-- <li><a href="https://t.me/joinchat/h5ZAsJ_hywM5ZTY1" class="entypo-telegram" target="_blank"><i
+    class="fa fa-telegram" aria-hidden="true"></i><span>Telegram</span></a></li> --%>
+
+         <li><a href="https://t.me/joinchat/h5ZAsJ_hywM5ZTY1" class="entypo-telegram" target="_blank">
+<img src="img/SMO/telegram.jpeg"
+              alt="telegram" title="telegram" class="img-rounded" width="25" height="25" />  
+             <span>Telegram</span></a></li>
+
+    </ul> 
+
+            </aside>
+
+            <!-- Sidebar
+    Social Media End -->
+            <script src="js/bootstrap.min.js" type="text/javascript"></script>
+            <!--Start of Zopim Live Chat Script-->
+          <%--  <script type="text/javascript">
+                window.$zopim || (function (d, s) {
+                    var z = $zopim = function (c) { z._.push(c) }, $ = z.s =
+        d.createElement(s), e = d.getElementsByTagName(s)[0]; z.set = function (o) {
+            z.set.
+        _.push(o)
+        }; z._ = []; z.set._ = []; $.async = !0; $.setAttribute("charset", "utf-8");
+                    $.src = "//v2.zopim.com/?3Kwl4vq5bdp1Cond1srbgQDa9qhPM5Fg"; z.t = +new Date; $.
+        type = "text/javascript"; e.parentNode.insertBefore($, e)
+                })(document, "script");
+            </script>--%>
+            <!--End of Zopim Live Chat Script-->
+        <!--Start of TIDIO chat -->
+        <script src="//code.tidio.co/tf4icckypxpiyae7abyj58mwu6ffixwo.js" async></script>
+        <!--End of TIDIO chat -->
+        
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-571ef961dfb4e572"></script>
+    </form>
+</body>
+</html>

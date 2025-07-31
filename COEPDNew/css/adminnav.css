@@ -1,0 +1,13 @@
+﻿
+ #cssmenu ul ul li a {
+              padding: 11px 10px;
+              width: 190px !important;
+              font-size: 12px;
+              text-decoration: none;
+              color: white;
+              font-weight: 400;
+              text-align: left; }
+ .div-right{
+        float:right;
+        margin-right:-40px;
+    }

@@ -1,0 +1,226 @@
+
+/*================ Start body ====================*/
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src:url(../fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+
+/*@font-face {
+    font-family: 'proxima-nova-extra-condensed.woff2';
+    src:url(../fonts/proxima-nova-extra-condensed.woff2) format('woff2');
+}*/
+
+body{
+	font-family:'Roboto-Regular'; 
+}
+h1,h2,h3,h4,h5{
+	font-family: 'Roboto-Regular' !important;
+	font-weight:bold;
+}
+a{
+	text-decoration:none !important;
+}
+.collapse ul li a{
+	font-family: 'Roboto-Regular' ;
+	
+}
+.logo-section{
+	padding-top:20px;
+    padding-left:20px;
+}
+.logo-section img{
+	height:95px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+
+	
+}
+
+/*.landing_page_body{
+	background-color:#fff;
+	background-repeat: no-repeat;
+    padding:35px;
+	background-size: cover;
+}*/
+.title-page{
+	text-align:center;
+	clear:both;
+}
+.left-title-page h1{
+	text-align:center;
+	color:#fff;
+	font-size:3em;
+	font-weight:600;
+	padding-bottom:0.5em;
+}
+.fitness-left-title-page h1{
+	text-align:center;
+	color:#fff;
+    padding-top:15px;
+	font-size:3em;
+	font-weight:600;
+	padding-bottom:0.5em;
+}
+.left-bg{
+    background-color:rgba(0,0,0,0.2);
+        width: 102%;
+    margin-left: -15px;
+    height: 644px;
+}
+.left-form-row p{
+	color:#eee;
+       font-weight:600;
+}
+
+.item-section2,.item-section3,.item-section4, .item-section5, .item-section6, .item-section7, .item-section8, .item-section9, .item-section10{
+	padding-top:3em;
+}
+
+.right-title-page h1{
+	color:#fff;
+}
+.right-title-page p{
+	color:#0088cc;
+ 
+}
+
+.send-me{
+	width:60%;
+	font-size:1.2em;
+	font-weight:600;
+}
+.form-bg{
+	
+}
+.right-form-row{
+	padding-bottom:2em;
+    background-color: rgba(0,0,0,0.1);
+    padding-top:2em;
+    margin-top:5em;
+    margin-left:5em;
+}
+.left-form-row{
+	/*padding-bottom:2em;*/
+    /*background-color: rgba(0,0,0,0.1);*/
+    /*padding-top:1em;*/
+    margin-top:14px;
+    height:auto;
+}
+.left-form-row p{
+	color:#fff;
+	font-size:1.2em;
+}
+.left-top-body{
+	float:left;
+	width:7%;
+	color:#fff;
+}
+.left-top-body i{
+	padding-top:10px;
+
+}
+.right-top-body{
+	float:right;
+	width:90%;
+}
+.landing-sun-btn{
+	text-align:center;
+  
+}
+.background{
+    background: url(../img/landing13.jpg) !important;
+    background-size:cover !important;
+    height:auto;
+    background-repeat: no-repeat;
+    /*background-position: 0% 0%;
+    background-image:inherit !important;
+    width:100%;
+    opacity:0.9;
+    background-color: transparent !important;
+    background-repeat: repeat !important;
+    background-attachment: scroll !important;*/
+}
+
+.background-right{
+    background-color:#8e9291;
+    height:auto;
+}
+.fitness-background{
+    background: url(../img/fitness-bg.jpg) !important;
+    background-size:cover !important;
+    height:auto;
+    background-repeat: no-repeat;
+}
+.fitness-background-right{
+     background-color:#848683;
+    height:auto;
+}
+@media (max-width: 1050px) {
+    .background{
+    background: url(../img/landing13.jpg) !important;
+    background-repeat: no-repeat;
+    background-size:880px 600px !important;
+}
+}
+@media (max-width: 991px) {
+    .background{
+    background: url(../img/landing13.jpg) !important;
+    background-repeat: no-repeat;
+    background-size:980px 600px !important;
+}
+}
+
+@media (max-width: 768px) {
+    .background{
+    background: url(../img/landing13.jpg) !important;
+    background-repeat: no-repeat;
+    background-size:770px 600px !important;
+}
+}
+@media (max-width: 740px) {
+    .background{
+    background: url(../img/landing13.jpg) !important;
+    background-repeat: no-repeat;
+    background-size:740px 600px !important;
+}
+}
+@media (max-width: 710px) {
+    .background{
+    background: url(../img/landing13.jpg) !important;
+    background-repeat: no-repeat;
+    background-size:700px 600px !important;
+}
+}
+@media (max-width: 680px) {
+    .background{
+    background: url(../img/landing13.jpg) !important;
+    background-repeat: no-repeat;
+    background-size:680px 600px !important;
+}
+}
+@media (max-width: 650px) {
+    .background{
+    background: url(../img/landing13.jpg) !important;
+    background-repeat: no-repeat;
+    background-size:650px 600px !important;
+}
+}
+@media (max-width: 620px) {
+    .background{
+    background: url(../img/landing13.jpg) !important;
+    background-repeat: no-repeat;
+    background-size:620px 600px !important;
+
+    }
+}
+@media (max-width: 585px) {
+    .background{
+    background: url(../img/landing13.jpg) !important;
+    background-repeat: no-repeat;
+    background-size:585px 600px !important;
+    background-position: center; 
+}
+}
