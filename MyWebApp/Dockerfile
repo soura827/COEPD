@@ -26,7 +26,7 @@ WORKDIR /app
 # Copy published files from host to container
 COPY out/ .
 
-EXPOSE 5000
+EXPOSE 5002
 ENV DOTNET_RUNNING_IN_CONTAINER=true \
     ASPNETCORE_URLS=http://0.0.0.0:5000
 
