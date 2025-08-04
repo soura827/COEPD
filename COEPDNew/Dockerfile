@@ -23,8 +23,8 @@ RUN dotnet publish -c Release -o /app
 FROM mcr.microsoft.com/dotnet/aspnet:6.0
 WORKDIR /app
 
-# Copy published files from host to container
-COPY out/ .
+# ✅ Copy published files from build stage, not host!
+COPY --from=build /app ./
 
 EXPOSE 5003
 ENV DOTNET_RUNNING_IN_CONTAINER=true \
