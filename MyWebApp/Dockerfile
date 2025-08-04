@@ -5,10 +5,10 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /source
 
 # Copy only the .csproj file (ensure folder exists first)
-COPY MyWebApp/*.csproj MyWebApp/
+COPY COEPD/*.csproj COEPD/
 
 # Restore dependencies
-WORKDIR /source/MyWebApp
+WORKDIR /source/COEPD
 RUN dotnet restore
 
 # Copy the full source code into the container
@@ -30,4 +30,4 @@ EXPOSE 5002
 ENV DOTNET_RUNNING_IN_CONTAINER=true \
     ASPNETCORE_URLS=http://0.0.0.0:5002
 
-ENTRYPOINT ["dotnet", "MyWebApp.dll"]
+ENTRYPOINT ["dotnet", "COEPD.dll"]
